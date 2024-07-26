@@ -1,0 +1,91 @@
+.tituloDis {
+    background-color: rgb(231, 173, 173);
+    color: rgba(150, 30, 30, 0.8);
+    font-size: 18px;
+}
+
+.container {
+  background-image: url(../assets/img/fondoCurvas.jpg);
+  background-repeat: round;
+}
+  
+.tituloHome {
+    color: rgba(150, 30, 30, 0.8);
+    background-color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+  color: #ffffff;
+}
+
+.h1 {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+}
+  
+.tarj {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-image: url(../assets/img/fondoCurvas.jpg);
+    background-repeat: round;
+}
+  
+.card {
+    border-radius: 10px;
+    width: 18rem;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.702);
+    transition: transform 0.3s ease-in-out;
+}
+  
+.card:hover {
+    transform: scale(1.05);
+}
+  
+.cardImg {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+  
+.cardBody {
+    padding: 20px;
+    background-color: #ffffff00;
+    border-radius: 0 0 10px 10px;
+}
+
+.cardBodyG {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+}
+  
+.cardText {
+    font-size: 18px;
+    color: #333;
+}
+  
+.canvaContainer {
+    height: 100vh;
+    background-image: linear-gradient( rgb(204, 204, 204), rgb(255, 99, 99));
+
+}
+a {
+  text-decoration: none;
+}
+
+canvas {
+  background-color: #ffffff;
+}
+
+.btnArt {
+  margin-left: 5px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffffff;
+}

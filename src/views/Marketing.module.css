@@ -1,0 +1,83 @@
+.tituloMark {
+    background-color: rgb(180, 226, 140);
+    color: rgba(150, 30, 30, 0.8);
+    font-size: 18px;
+}
+
+.container {
+    background-image: url(../assets/img/fondoMarket.jpg);
+    background-position: bottom;
+    background-color: rgb(204, 204, 204);
+}
+
+.cabecera {
+    padding-top: 35px;
+    height: 100vh;
+}
+
+.cabeceraCont {
+    background-image: url(../assets/img/fondoMarket.jpg);
+    background-position: bottom;
+    padding: 0px 250px 0px 250px;
+}
+
+a {
+ text-decoration: none;
+ color: #696767;
+}
+
+.marketingContent {
+    padding: 40px;
+    background-image: linear-gradient( rgb(204, 204, 204), rgb(101, 243, 101));
+    height: 96.5vh;
+}
+  
+.marketingContent p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+  
+.ctaButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+.ctaButton:hover {
+    background-color: #3e8e41;
+}
+
+.card {
+    display: block;
+    background-color: #b9f593b5;
+    width: 100%;
+    border-radius: 10px;
+}
+  
+.cardTitle {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: xx-large;
+    font-style: normal;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.descripciones {
+    margin-top: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.modals {
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,250 @@
+/* Home.css */
+/* LOS ESTILOS TAMBIÉN SE APLICAN AL NAV, MIENTRAS ESTE SE UBIQUE EN "HOME"*/
+li {
+  text-decoration: none;
+}
+
+.contenedor {
+  background-color: #ccc;
+  background-image: url(../assets/img/fondoCubista.jpg);
+  background-repeat: repeat-x;
+}
+
+.tituloHome {
+  color: rgba(150, 30, 30, 0.8);
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+h6 {
+  color: rgba(150, 30, 30, 0.8);
+  font-size: 18px;
+  margin-left: 1%;
+  margin-right: 2rem;
+}
+  
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.parr {
+  color: #000000;
+  text-shadow:#ccc solid 5px;
+  font-family: "Sevillana", cursive;
+  font-size: 50px;
+  font-style: normal;
+  margin-bottom: -90px;
+}
+
+
+/* Add some basic styling to the form */
+.form {
+  font-family: "Roboto Slab", serif;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9b1;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Style the heading */
+.form h2 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.form h6 {
+  color: #949393;
+  font-size:14px;
+}
+
+/* Style the input fields */
+.form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add some hover and focus effects to the input fields */
+.form input:hover {
+  border-color: #aaa;
+}
+
+.form input:focus {
+  border-color: #337ab7;
+  box-shadow: 0 0 10px rgba(51, 122, 183, 0.5);
+}
+
+/* Style the button */
+.form button{
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Add some hover effect to the button */
+.form button:hover {
+  border-radius: 10px;
+  background-color: #23527c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add some active effect to the button */
+.form button:active {
+  background-color: #1d4f7a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* efecto sobre cards */
+
+.tarj {
+  display: flex;
+  height: 100vh;
+  margin-top: 55px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative; /* Establecer posición relativa para el contenedor */
+  width: 18rem;
+  margin: 1rem; /* Margen individual para cada card */
+  background: #ffffff;
+  margin-top: 55px;
+  border-radius: 10px;
+  height: 20%;
+}
+
+.newCard {
+  position: relative; /* Establecer posición relativa para el contenedor */
+  width: 18rem;
+  margin: 1rem; /* Margen individual para cada card */
+  background: #ffffff;
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 20%;
+}
+
+.newCard > img {
+  max-width: 100%; 
+  max-height: 85%;
+  border-radius: 10px;
+  object-fit: cover;
+  border: rgb(255, 255, 255) 3px solid;
+  width: 240px;
+}
+
+.cardBody {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Roboto Slab", serif;
+  top: 55%; /* Posicionar en el centro vertical */
+  left: 50%; /* Posicionar en el centro horizontal */
+  padding: 20px; /* Agregar padding para que se vea bien */
+}
+
+.cardBody > button {
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(189, 189, 8);
+}
+
+.cardBody > p {
+  color: #000000;
+}
+
+.cardImg {
+  max-width: 100%; 
+  max-height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  border: rgb(255, 255, 255) 3px solid;
+  width: 240px;
+}
+
+
+.cardImg:hover {
+  filter: blur(2px);
+  transform: scale(1.01);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/*SECCIÓN SEGUNDA MITAD */
+
+
+
+.banner {
+  display: flex;
+  align-items: baseline;
+  font-family: "Roboto Slab", serif;
+  background-color: aliceblue;
+  height: 94vh;
+  background-image: linear-gradient(rgb(204, 204, 204), yellow);
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.collCard {
+  min-height: 120px;
+}
+
+.collDiv {
+  border: rgb(232, 134, 14) solid 1px;
+  border-radius: 10px;
+  background-color: #d40b0b00;
+  width: 300px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .tarj {
+    gap: 1rem;
+  }
+  .card {
+    margin: 0.5rem;
+  }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .tarj {
+    gap: 1.5rem;
+  }
+  .card {
+    margin: 0.75rem;
+  }
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 1025px) {
+  .tarj {
+    gap: 2.5rem;
+  }
+  .card {
+    margin: 1.25rem;
+  }
+}

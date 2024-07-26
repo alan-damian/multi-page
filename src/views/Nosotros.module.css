@@ -1,0 +1,70 @@
+.container {
+    background-image: url('../assets/img/fondoNos.jpg');
+    background-position-y: bottom;
+    height: 100vh;
+}
+
+.tituloNos {
+    background-color: rgb(229, 255, 62);
+    color: rgba(150, 30, 30, 0.8);
+    font-size: 18px;
+}
+
+.tarjetasInfo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flipCard {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    margin: 40px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flipCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flipCard:hover .flipCardInner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flipCardFront, .flipCardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flipCardFront {
+    background-image: url('../assets/img/arquitectura.jpg');
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flipCardBack {
+    background-color: rgba(60, 137, 215, 0.457);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .img {
+    width: -webkit-fill-available;
+    padding-top: 19.6px;
+  }
